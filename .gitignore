@@ -1,0 +1,7 @@
+./experiments
+**/__pycache__/
+./Submission
+*.pyc
+*.pyo
+*.pyd
+*.pkl

@@ -1,5 +1,10 @@
 
-# TRACS 🚀
+<div align="center">
+  <img src="fig/Flow.png" width="50%" height="50%" style="border:1px solid black;">
+  <p>TRACS Data Flow</p>
+</div>
+
+# TRACS 
 
 Official repository for "TRACS: A generalizable Triple Attention Network for
 Self-Supervised Coronary Vessel Segmentation"
@@ -7,24 +12,32 @@ Self-Supervised Coronary Vessel Segmentation"
 ## Overview 💡
 
 <div align="center">
-  <img src="fig/allnew_fig.png" width="80%" alt="TRACS Framework" style="border:1px solid black;">
+  <img src="fig/all_new_fig.png" width="80%" alt="TRACS Framework" style="border:1px solid black;">
   <p>TRACS Framework Overview</p>
 </div>
 
-<div align="center">
-  <img src="fig/CBA_Block.png" width="80%" alt="TRACS Framework" style="border:1px solid black;">
-  <p>Revolving Attention Block (RAB)</p>
-</div>
 
 
 ## Abstract 📝
 
-Medical image segmentation is a crucial task that helps reduce radiologists' workload by enabling the accurate assessment of stenosis severity. We present **TRACS**, a self-supervised Triple Attention Network designed to improve multi-scale feature representation for coronary vessel segmentation. The encoder employs parallel convolutions with varying kernel sizes to generate dynamic channel-wise attention weights, thereby effectively capturing fine structural details across different scales. This approach is particularly suited for segmenting thin, elongated structures, such as vessels in angiograms, which are often affected by low contrast and noise. Unlike earlier self-supervised methods that rely on diffusion processes or adversarial learning with multiple generators and discriminators, which often introduce training complexities and optimization instabilities, TRACS adopts a streamlined architecture that ensures stable and consistent convergence. The training process combines L1, clDICE, and BCE losses to optimize both for regional accuracy and boundary precision. We evaluate TRACS on diverse datasets, including unseen coronary angiograms (134XCA and 30XCA) and retinal vessel images (DRIVE and STARE), demonstrating its strong generalization across imaging domains. Results indicate that TRACS outperforms several recent self-supervised methods and matches the performance of supervised baselines in segmentation accuracy and robustness. Additionally, class activation maps (CAM) provide explainability for the model's predictions. TRACS offers a practical, domain-independent solution for structure segmentation tasks in medical imaging.
+Medical image segmentation plays a pivotal role in reducing radiologists' workload by enabling accurate severity assessment and treatment planning. With coronary heart disease becoming an increasing concern globally, there is a growing need for efficient and reliable segmentation methods. In this context, we present TRACS, a self-supervised Triple Attention Network designed to enhance multi-scale feature representation for coronary vessel segmentation. The encoder generates dynamic channel-wise attention weights, effectively capturing fine structural details across multiple scales. This design is particularly well-suited for segmenting thin, elongated structures, such as vessels in angiograms, which are often challenging to delineate due to low contrast and occluded vessels. Unlike earlier self-supervised methods that rely on diffusion processes or multi-generator adversarial learning, which often introduce training complexities and optimization instabilities. TRACS adopts a streamlined architecture that not only ensures stable, consistent performance but also operates with a significantly reduced parameter count, making it a lightweight, efficient self-supervised architecture. The training process combines a fusion of losses to optimize both for regional accuracy and boundary precision. We evaluate TRACS on diverse unseen coronary angiograms (134XCA and 30XCA) and retinal vessel images (DRIVE and STARE). \textcolor{blue}{TRACS achieves significant inference gains, in terms of segmentation performance, and inference speed operating up to 3x faster than the nearest baseline method, and a significantly lower memory footprint, making it highly efficient for real-time applications and deployment on resource-constrained devices. We supplement the results with a thorough statistical analysis and explainability results from various Gradient and perturbation-based techniques. Results indicate that TRACS outperforms several recent self-supervised methods and matches the performance of supervised baselines in segmentation accuracy and robustness.} TRACS offers a practical, domain-independent solution for vessel structure segmentation tasks in medical imaging.
+
+
+<div align="center">
+  <img src="fig/CBA_Block.png" width="80%" alt="Revolving Attention Block" style="border:1px solid black;">
+  <p>Revolving Attention Block (RAB)</p>
+</div>
+
+
+<div align="center">
+  <img src="fig/SCTA_Block.png" width="80%" alt="SCTA Framework" style="border:1px solid black;">
+  <p>Selective Channel Triple Attention (SCTA) Block</p>
+</div>
 
 ## Platform and Environment⚙️
 
 *   **OS**: Ubuntu 22
-*   **Python**: >= 3.9 
+*   **Python**: >= 3.8
 *   **PyTorch**: >= 1.12.1 
 
 ## Setup 🛠️
