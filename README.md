@@ -54,7 +54,9 @@ python3 main.py -p train -c config/train.json
 
 ## Testing 🧪
 
+please download the model checkpoints from https://mega.nz/file/5DlE2RQa#PlhGVHh5FlVAKGis__fkY1mcIzvb8H0e3RWCsOFXVXA 
 ```bash
+
 python3 main.py -p test -c config/test.json
 ```
 
