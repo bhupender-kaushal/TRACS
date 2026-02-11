@@ -49,23 +49,20 @@ Datasets utilised in our experiments:
 ## Training 🚀
 
 ```bash
-python3 main.py -p train -c config/train.json
+python main.py -p train -c config/train.json
 ```
 
 ## Testing 🧪
 
-please download the model checkpoints from https://mega.nz/file/5DlE2RQa#PlhGVHh5FlVAKGis__fkY1mcIzvb8H0e3RWCsOFXVXA 
 ```bash
-
-python3 main.py -p test -c config/test.json
+python main.py -p test -c config/test.json
 ```
 
-## Pre-trained Models 🧠
+
+## Pre-trained Model
 
 
-Pre-trained models for evaluation will be made available soon, we are preparing a self understandable clean codebase for you. 
-
-
+please download the model checkpoints from https://mega.nz/file/5DlE2RQa#PlhGVHh5FlVAKGis__fkY1mcIzvb8H0e3RWCsOFXVXA 
 ## 🤝Citation
 
 
