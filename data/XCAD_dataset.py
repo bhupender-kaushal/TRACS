@@ -16,7 +16,7 @@ class XCADDataset(Dataset):
         if split == 'train':
             # 'trainB'= Image, 'trainC'=Background, 'trainA'=fractal label
             self.A_paths = sorted(glob.glob(os.path.join(dataroot, self.split, 'trainB', '*.png')))
-            self.F_paths = sorted(glob.glob(os.path.join(dataroot, 'train', 'trainA_1', '*.png')))
+            self.F_paths = sorted(glob.glob(os.path.join(dataroot, 'train', 'trainA', '*.png')))
 
             self.data_len = len(self.A_paths)
             self.data_lenF = len(self.F_paths)

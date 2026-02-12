@@ -34,6 +34,10 @@ Medical image segmentation plays a pivotal role in reducing radiologists' worklo
   <p>Selective Channel Triple Attention (SCTA) Block</p>
 </div>
 
+
+## Fractal Images
+* run the fractal.py script and copy the generated images into the data->Dataset_XCAD->train->trainA
+* the angiogram images should be in folder trainB
 ## Platform and Environment⚙️
 
 *   **OS**: Ubuntu 22
@@ -41,7 +45,7 @@ Medical image segmentation plays a pivotal role in reducing radiologists' worklo
 *   **PyTorch**: >= 1.12.1 
 
 ## Setup 🛠️
-we prefer you to create a conda environment in order to prevent the library mismatch and clashes:
+ we prefer you to create a conda environment in order to prevent the library mismatch and clashes:
 
 ```bash
 conda create -n TRACS python=3.9
